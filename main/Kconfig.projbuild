@@ -1,0 +1,17 @@
+menu "Example configuration"
+    config EXAMPLE_I2C_ADDR
+        hex "I2C address of PCF8574"
+        default 0x27
+
+    config EXAMPLE_I2C_MASTER_SCL
+        int "SCL GPIO Number"
+        default 19
+        help
+            GPIO number for I2C Master clock line.
+
+    config EXAMPLE_I2C_MASTER_SDA
+        int "SDA GPIO Number"
+        default 18
+        help
+            GPIO number for I2C Master data line.
+endmenu
